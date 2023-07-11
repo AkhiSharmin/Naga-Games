@@ -16,6 +16,40 @@ html {
   font-family: "Orbitron", sans-serif;
 }
 
+@media only screen and (max-width: 56.8rem) {
+  html {
+    font-size: 35%;
+  }
+}
+@media only screen and (max-width: 96.8rem) {
+  html {
+    font-size: 55%;
+  }
+}
+
 /* common css  */
+
+/* banner css  */
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-bullet {
+  border-radius: 0px !important;
+}
 
 /* navbar css  */

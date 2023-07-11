@@ -7,6 +7,8 @@
     <!-- css  -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 
     <title>Naga Games</title>
@@ -14,8 +16,8 @@
 
 <body>
     <!-- navbar start -->
-    <header>
-        <div class="navbar bg-orange-300 md:px-24 px-16 py-5">
+    <header class="bg-no-repeat bg-cover  object-cover" style="background-image: url('./assets/bgimg/bg-img.png');">
+        <div class="navbar md:px-24 px-16 py-5 text-white ">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -26,7 +28,7 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-3xl">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-900 rounded-box w-52 text-3xl">
                         <li><a>HOME</a></li>
                         <li>
                             <a>ALL GAMES</a>
@@ -49,7 +51,7 @@
                         <li tabindex="0">
                             <details>
                                 <summary>ALL GAMES</summary>
-                                <ul class="p-2">
+                                <ul class="p-2 bg-slate-900">
                                     <li><a>Submenu 1</a></li>
                                     <li><a>Submenu 2</a></li>
                                 </ul>
@@ -61,7 +63,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="navbar-end">
                 <button class="btn btn-ghost btn-circle mt-3 mr-3 text-xl">
                     <span>EN</span>
@@ -83,12 +84,125 @@
                 </label>
             </div>
         </div>
+        <!-- navbar end -->
+
+        <!-- banner start -->
+        <div class="swiper mySwiper mt-24">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class=" rounded-xl h-full left-0 top-0 text-left">
+                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                            <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
+                                INTO A WORLD <br>
+                                OF CASINO
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div class="py-5">
+                                <button
+                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px]">Play</button>
+                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" rounded-xl h-full left-0 top-0 text-left">
+                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                            <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
+                                INTO A WORLD <br>
+                                OF CASINO
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div class="py-5">
+                                <button
+                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px]">Play</button>
+                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" rounded-xl h-full left-0 top-0 text-left">
+                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                            <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
+                                INTO A WORLD <br>
+                                OF CASINO
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div class="py-5">
+                                <button
+                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</button>
+                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" rounded-xl h-full left-0 top-0 text-left">
+                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                            <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
+                                INTO A WORLD <br>
+                                OF CASINO
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div class="py-5">
+                                <button
+                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</button>
+                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" rounded-xl h-full left-0 top-0 text-left">
+                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                            <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
+                                INTO A WORLD <br>
+                                OF CASINO
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div class="py-5">
+                                <button
+                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</button>
+                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination mt-10"></div>
+        </div>
+
+        <!-- banner end -->
     </header>
 
 
     <script src="js/main.js"></script>
     <!-- tailwind css  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
