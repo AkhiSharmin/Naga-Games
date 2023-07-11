@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  /* this defines what 1 rem is */
+  font-size: 62.5%; /* 1rem = 10px  10px*16px = 62% */
+  font-family: "Orbitron", sans-serif;
+}
+
+/* common css  */
+
+/* navbar css  */
