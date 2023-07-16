@@ -9,15 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href=" https://tailwindcss.com/docs/installation">
 
+    <!-- font-awesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
     <title>Naga Games</title>
 </head>
 
 <body>
     <!-- navbar start -->
-    <header class="bg-no-repeat bg-cover  object-cover" style="background-image: url('./assets/bgimg/bg-img.png');">
-        <div class="navbar md:px-24 px-16 py-5 text-white ">
+    <header class="bg-no-repeat bg-cover object-cover" style="background-image: url('./assets/bgimg/bg-img.png');">
+        <div class="navbar py-5 text-white max-w-screen-2xl mx-auto">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -52,7 +55,7 @@
                             <details>
                                 <summary>ALL GAMES</summary>
                                 <ul class="p-2 bg-slate-900">
-                                    <li><a>Submenu 1</a></li>
+                                    <li><a href="allGames.html">ALL GAMES</a></li>
                                     <li><a>Submenu 2</a></li>
                                 </ul>
                             </details>
@@ -60,23 +63,24 @@
                         <li><a>ABOUT</a></li>
                         <li><a>MEDIA</a></li>
                         <li><a>CAREERS</a></li>
+                        <li><a href="Login.html">Login</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle mt-3 mr-3 text-xl">
+                <div class="btn btn-ghost btn-circle mt-3 mr-3 text-xl">
                     <span>EN</span>
-                </button>
-                <button class="btn btn-ghost btn-circle mt-3">
+                </div>
+                <div class="btn btn-ghost btn-circle mt-3">
                     <img src="assets/Vector.png" alt="">
-                </button>
-                <button class="btn btn-ghost btn-circle mt-3 mx-3">
+                </div>
+                <div class="btn btn-ghost btn-circle mt-3 mx-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                </button>
+                </div>
                 <label tabindex="0" class="btn btn-ghost btn-circle avatar w-[30px]">
                     <div class="rounded-full">
                         <img src="https://i.ibb.co/y8t6kyz/btx-avatar-placeholder-01-2.jpg" />
@@ -91,7 +95,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class=" rounded-xl h-full left-0 top-0 text-left">
-                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                        <div class='text-white md:w-1/2 w-full md:px-36 p-10'>
                             <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
                                 INTO A WORLD <br>
                                 OF CASINO
@@ -100,16 +104,15 @@
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
                                 printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div class="py-5">
-                                <button
-                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px]">Play</button>
-                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                                <div class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px]">Play</div>
+                                <div class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class=" rounded-xl h-full left-0 top-0 text-left">
-                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                        <div class='text-white md:w-1/2 w-full md:px-36 p-10'>
                             <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
                                 INTO A WORLD <br>
                                 OF CASINO
@@ -118,16 +121,15 @@
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
                                 printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div class="py-5">
-                                <button
-                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px]">Play</button>
-                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                                <div class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px]">Play</div>
+                                <div class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class=" rounded-xl h-full left-0 top-0 text-left">
-                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                        <div class='text-white md:w-1/2 w-full md:px-36 p-10'>
                             <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
                                 INTO A WORLD <br>
                                 OF CASINO
@@ -136,16 +138,15 @@
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
                                 printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div class="py-5">
-                                <button
-                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</button>
-                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                                <div class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</div>
+                                <div class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class=" rounded-xl h-full left-0 top-0 text-left">
-                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                        <div class='text-white md:w-1/2 w-full md:px-36 p-10'>
                             <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
                                 INTO A WORLD <br>
                                 OF CASINO
@@ -154,16 +155,15 @@
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
                                 printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div class="py-5">
-                                <button
-                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</button>
-                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                                <div class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</div>
+                                <div class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class=" rounded-xl h-full left-0 top-0 text-left">
-                        <div class='text-white md:w-1/2 w-full md:p-36 p-10'>
+                        <div class='text-white md:w-1/2 w-full md:px-36 p-10'>
                             <h2 class='text-7xl font-bold tracking-wider leading-tight'>ROLLING <br>
                                 INTO A WORLD <br>
                                 OF CASINO
@@ -172,9 +172,8 @@
                                 has been the industry's standard dummy text ever since the 1500s, when an unknown
                                 printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div class="py-5">
-                                <button
-                                    class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</button>
-                                <button class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</button>
+                                <div class="btn btn-primary bg-white text-black mr-5 text-2xl px-[30px] ">Play</div>
+                                <div class="btn btn-outline text-white text-2xl px-[30px]">See Games Info</div>
                             </div>
                         </div>
                     </div>
@@ -182,12 +181,648 @@
             </div>
             <div class="swiper-pagination mt-10"></div>
         </div>
-
         <!-- banner end -->
+
+        <!-- your profile start  -->
+        <div class="max-w-screen-2xl mx-auto text-white">
+            <div class="flex items-center justify-center">
+                <img src="assets/Vector (1).png" alt="">
+                <h2 class="text-7xl ml-5 font-bold space-x-5 py-24">Your Profile</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+                <div class="card bg-[#292150] text-neutral-content rounded-3xl border-2 border-emerald-500">
+                    <div class="card-body p-10">
+                        <h2 class="card-title text-4xl">can play more play it back</h2>
+                        <p class="text-xl pb-24 text-3xl">Bonus</p>
+                        <p class="flex justify-end text-2xl">balance</p>
+                        <div class="card-actions flex items-center justify-between">
+                            <div class="btn btn-primary text-2xl">withdraw bonus</div>
+                            <div class="text-2xl ml-4">0.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#292150] text-neutral-content rounded-3xl border-2 border-fuchsia-950">
+                    <div class="card-body p-10">
+                        <div class="flex items-center gap-5">
+                            <img src="assets/Profile.png" alt="">
+                            <div>
+                                <h2 class="card-title text-4xl">User Name #144556</h2>
+                                <p class="text-xl text-3xl mt-3">Jackpot</p>
+                            </div>
+                        </div>
+                        <p class="flex justify-end text-2xl text-fuchsia-900">balance</p>
+                        <div class="card-actions flex items-center justify-between">
+                            <div>
+                                <div class="btn btn-primary text-2xl mr-4">deposit</div>
+                                <div class="btn btn-primary text-2xl">withdraw money</div>
+                            </div>
+                            <div class="text-2xl ml-4">0.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#292150] text-neutral-content rounded-3xl">
+                    <div class="card-body p-10">
+                        <h2 class="card-title text-4xl">Bonus invites friends</h2>
+                        <p class="text-xl pb-24 text-2xl">Bonus</p>
+                        <p class="flex justify-end text-2xl">balance</p>
+                        <div class="card-actions flex items-center justify-between">
+                            <div class="btn btn-primary text-2xl">withdraw bonus</div>
+                            <div class="text-2xl ml-4">0.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- your profile end -->
     </header>
+
+    <main>
+        <section class="bg-no-repeat bg-cover" style="background-image: url('./assets/bgimg/banner-img.png');">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="text-center">
+                    <h2 class="text-7xl ml-5 font-bold space-x-5 text-white pt-48">Top <span
+                            class="text-[#D5336D]">10</span> Games
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2  pt-72 pb-36">
+                    <div>
+                        <div class='text-white w-full md:px-36'>
+                            <h2 class='text-7xl font-bold tracking-wider leading-tight pb-5'>LET'S PLAY <br>
+                                GUN FOR <br>
+                                HEAD CASINO
+                            </h2>
+                            <p class="py-10 text-2xl font-semibold">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry.
+                                Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <div class="py-5">
+                                <div class="btn bg-white text-black mr-5 text-2xl px-[30px]">Play</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider start  -->
+                    <div class="customSlider">
+                        <i id="left" class="fa-solid fa-angle-left"></i>
+                        <ul class="slider">
+                            <li class="card">
+                                <div class="img">
+                                    <img src="assets/top10game/PGSOFT_wild-bandito.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="img">
+                                    <img src="assets/top10game/PGSOFT_mahjong-ways2.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="img">
+                                    <img src="assets/top10game/PGSOFT_queen-bounty.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="img">
+                                    <img src="assets/top10game/PGSOFT_queen-bounty.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                        </ul>
+                        <i id="right" class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <!-- slider end -->
+                </div>
+            </div>
+            <!-- our games start  -->
+            <div>
+                <div class="max-w-screen-2xl mx-auto">
+                    <div class="flex items-center justify-center">
+                        <img src="assets/Vector4.png" alt="">
+                        <h2 class="text-7xl ml-5 font-bold space-x-5  text-white">Our Games</h2>
+                    </div>
+                    <div class="flex justify-center py-10">
+                        <input type="text" placeholder=" ค้นหาเกมส์"
+                            class="input input-bordered text-white w-1/3 py-10 text-2xl bg-primary" />
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 py-8 md:flex-nowrap">
+                        <button
+                            class="btn text-white bg-gradient-to-r from-[#D33173]  to-[#4938C5] flex-nowrap py-14 drop-shadow-2xl">
+                            <img src="assets/ourGames/Group 1658 2.png" alt="">
+                            <h2 class="text-2xl ml-4">เกมยอดฮิต</h2>
+
+                        </button>
+                        <button
+                            class="btn text-white bg-gradient-to-r from-[#D33173]  to-[#4938C5] flex-nowrap py-14 drop-shadow-2xl">
+                            <img src="assets/ourGames/Group 1658 2 (1).png" alt="">
+                            <h2 class="text-2xl ml-4">เกมที่คุณชอบ</h2>
+                        </button>
+                        <button
+                            class="btn text-white bg-gradient-to-r from-[#D33173]  to-[#4938C5] flex-nowrap py-14 drop-shadow-2xl">
+
+                            <img src="assets/ourGames/profile.png" alt="">
+                            <h2 class="text-2xl ml-4">เกมพีจี</h2>
+                        </button>
+
+                        <button
+                            class="btn text-white bg-gradient-to-r from-[#D33173]  to-[#4938C5] flex-nowrap py-14 drop-shadow-2xl">
+                            <img src="assets/ourGames/profile (1).png" alt="">
+                            <h2 class="text-2xl ml-4">สล็อตมาใหม่</h2>
+                        </button>
+                        <button
+                            class="btn text-white bg-gradient-to-r from-[#D33173]  to-[#4938C5] flex-nowrap py-14 drop-shadow-2xl">
+                            <img src="assets/ourGames/profile (2).png" alt="">
+                            <h2 class="text-2xl ml-4">กีฬาพารวย</h2>
+                        </button>
+                        <button
+                            class="btn text-white bg-gradient-to-r from-[#D33173]  to-[#4938C5] flex-nowrap py-14 drop-shadow-2xl">
+                            <img src="assets/ourGames/Group 1658 3.png" alt="">
+                            <h2 class="text-2xl ml-4">ยิงปลา</h2>
+                        </button>
+                        <button
+                            class="btn text-white bg-gradient-to-r from-[#D33173]  to-[#4938C5] flex-nowrap py-14 drop-shadow-2xl">
+                            <img src="assets/ourGames/Group 1658 2 (2).png" alt="">
+                            <h2 class="text-2xl ml-4">ค่ายเกม</h2>
+                        </button>
+                        <button
+                            class="btn text-white bg-gradient-to-r from-[#D33173]  to-[#4938C5] flex-nowrap py-14 drop-shadow-2xl">
+                            <img src="assets/ourGames/profile (3).png" alt="">
+                            <h2 class="text-2xl ml-4">คาสิโนสด</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- our games end  -->
+        </section>
+
+
+        <!-- slider section start  -->
+
+
+        <!-- Recently played games slider start  -->
+        <section class="bg-no-repeat bg-cover object-cover"
+            style="background-image: url('./assets/bgimg/banner-3.png');">
+            <div class="max-w-screen-2xl mx-auto">
+                <div>
+                    <div class="recent_play_game">
+                        <div>
+                            <div class="md:flex justify-between items-center">
+                                <div>
+                                    <button
+                                        class="btn text-white bg-gradient-to-r from-[#70EBEB]  to-[#92E6A3] flex-nowrap py-14 drop-shadow-2xl border-0 slider-button md:mb-10">
+                                        <img src="assets/ourGames/btn-1.png" alt="">
+                                        <h2 class="text-2xl ml-4 px-8"> เกมส์ที่เล่นล่าสุด</h2>
+                                    </button>
+                                </div>
+                                <div>
+                                    <h2 class="text-xl text-slate-400 see-games mr-[200px] mb-[36px]">See All Games</h2>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i id="left" class="fa-solid fa-angle-left leftButton"></i>
+                                <i id="right" class="fa-solid fa-angle-right rightButton"></i>
+                            </div>
+                        </div>
+
+                        <ul class="recent_play_game_slider">
+                            <li class="recent_play_card">
+                                <div class="img">
+                                    <img src="assets/Recently-played-games-slider/Frame 66.png" alt="img"
+                                        draggable="false" />
+                                </div>
+                            </li>
+                            <li class="recent_play_card">
+                                <div class="img">
+                                    <img src="assets/Recently-played-games-slider/9.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="recent_play_card">
+                                <div class="img">
+                                    <img src="assets/Recently-played-games-slider/1 (1).png" alt="img"
+                                        draggable="false" />
+                                </div>
+                            </li>
+                            <li class="recent_play_card">
+                                <div class="img">
+                                    <img src="assets/Recently-played-games-slider/16.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="recent_play_card">
+                                <div class="img">
+                                    <img src="assets/Recently-played-games-slider/7.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="recent_play_card">
+                                <div class="img">
+                                    <img src="assets/Recently-played-games-slider/Frame 67.png" alt="img"
+                                        draggable="false" />
+                                </div>
+                            </li>
+                            <li class="recent_play_card">
+                                <div class="img">
+                                    <img src="assets/Recently-played-games-slider/7.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recently played games slider end  -->
+
+        <!-- Hit games slider start  -->
+        <section class="bg-no-repeat bg-cover object-cover"
+            style="background-image: url('./assets/bgimg/banner-3.png');">
+            <div class="max-w-screen-2xl mx-auto">
+                <div>
+                    <div class="hit_game">
+                        <div>
+                            <div class="md:flex justify-between items-center">
+                                <div>
+                                    <button
+                                        class="slider-button btn text-white bg-gradient-to-r from-[#70EBEB]  to-[#92E6A3] flex-nowrap py-14 drop-shadow-2xl border-0 slider-button md:mb-10">
+                                        <img src="assets/ourGames/Group 1658 2.png" alt="">
+                                        <h2 class="text-2xl ml-4 px-8"> เกมยอดฮิต</h2>
+                                    </button>
+                                </div>
+                                <div>
+                                    <h2 class="see-games text-xl text-slate-400 see-games mr-[200px] mb-[56px]">See All
+                                        Games</h2>
+                                </div>
+                            </div>
+                            <div>
+                                <i id="left" class="fa-solid fa-angle-left leftButton"></i>
+                                <i id="right" class="fa-solid fa-angle-right rightButton"></i>
+                            </div>
+                        </div>
+                        <ul class="hit_game_slider">
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/36.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/32.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/36.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/26.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/22.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/19.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/16.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/32.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                            <li class="hit_play_card">
+                                <div class="img">
+                                    <img src="assets/hit game slider/36.png" alt="img" draggable="false" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hit games slider end  -->
+
+        <!-- pg games slider start -->
+        <section class="bg-no-repeat bg-cover object-cover"
+            style="background-image: url('./assets/bgimg/banner-3.png');">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="pg_game">
+                    <div>
+                        <div class="md:flex justify-between items-center">
+                            <div>
+                                <button
+                                    class="slider-button btn text-white bg-gradient-to-r from-[#70EBEB]  to-[#92E6A3] flex-nowrap py-14 drop-shadow-2xl border-0 slider-button md:mb-10">
+                                    <img src="assets/ourGames/profile.png" alt="">
+                                    <h2 class="text-2xl ml-4 px-8"> เกมพีจี</h2>
+                                </button>
+                            </div>
+                            <div>
+                                <h2 class="see-games text-xl text-slate-400 see-games mr-[200px] mb-[56px]">See All
+                                    Games</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <i id="left" class="fa-solid fa-angle-left leftButton"></i>
+                            <i id="right" class="fa-solid fa-angle-right rightButton"></i>
+                        </div>
+                    </div>
+                    <ul class="pg_game_slider">
+                        <li class="pg_play_card">
+                            <div class="img">
+                                <img src="assets/PG game slider/Frame 69.png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="pg_play_card">
+                            <div class="img">
+                                <img src="assets/PG game slider/2 (1).png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="pg_play_card">
+                            <div class="img">
+                                <img src="assets/PG game slider/3 (1).png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="pg_play_card">
+                            <div class="img">
+                                <img src="assets/PG game slider/4.png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="pg_play_card">
+                            <div class="img">
+                                <img src="assets/PG game slider/5.png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="pg_play_card">
+                            <div class="img">
+                                <img src="assets/PG game slider/6.png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="pg_play_card">
+                            <div class="img">
+                                <img src="assets/PG game slider/Frame 69.png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="pg_play_card">
+                            <div class="img">
+                                <img src="assets/PG game slider/2 (1).png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- pg games slider end -->
+
+        <!-- new arrival slots slider start  -->
+        <section class="bg-no-repeat bg-cover object-cover"
+            style="background-image: url('./assets/bgimg/banner-3.png');">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="new_arrival">
+
+                    <div>
+                        <div class="md:flex justify-between items-center">
+                            <div>
+                                <button
+                                    class="slider-button btn text-white bg-gradient-to-r from-[#70EBEB]  to-[#92E6A3] flex-nowrap py-14 drop-shadow-2xl border-0 slider-button md:mb-10">
+                                    <img src="assets/ourGames/profile (1).png" alt="">
+                                    <h2 class="text-2xl ml-4 px-8"> สล็อตมาใหม่</h2>
+                                </button>
+                            </div>
+                            <div>
+                                <h2 class="see-games text-xl text-slate-400 see-games mr-[200px] mb-[56px]">See All
+                                    Games</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <i id="left" class="fa-solid fa-angle-left leftButton"></i>
+                            <i id="right" class="fa-solid fa-angle-right rightButton"></i>
+                        </div>
+                    </div>
+
+
+                    <ul class="new_arrival_slider">
+                        <li class="new_arrival_card">
+                            <div class="img">
+                                <img src="assets/new arrival slots slider/01 (1).png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="new_arrival_card">
+                            <div class="img">
+                                <img src="assets/new arrival slots slider/02 (1).png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="new_arrival_card">
+                            <div class="img">
+                                <img src="assets/new arrival slots slider/03 (1).png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+
+                        <li class="new_arrival_card">
+                            <div class="img">
+                                <img src="assets/new arrival slots slider/04 (1).png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                        <li class="new_arrival_card">
+                            <div class="img">
+                                <img src="assets/new arrival slots slider/05 (1).png" alt="img" draggable="false" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- new arrival slots slider end -->
+
+        <!-- live casino slider start  -->
+        <section class="bg-no-repeat bg-cover object-cover"
+            style="background-image: url('./assets/bgimg/banner-3.png');">
+            <div class="max-w-screen-2xl mx-auto">
+
+            </div>
+        </section>
+        <!-- live casino slider end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- slider section end  -->
+
+        <!-- sponsor section start  -->
+        <!-- <section class="bg-no-repeat bg-cover" style="background-image: url('./assets/bgimg/banner-2.png');">
+            <div class="max-w-screen-2xl mx-auto py-48">
+                <div class="bg-white bg-opacity-20 p-10 border-2 border-slate-400 rounded-3xl">
+                    <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-7 gap-5 drop-shadow-2xl">
+                        <div>
+                            <img src="assets/sponser-img/Frame 1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 41.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 42.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 43.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 44.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 45.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 46.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 43 (1).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 49.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 48.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 45 (1).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 1 (1).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 42 (1).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 46 (1).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 51.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 45 (2).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 1 (2).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 42 (2).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 46 (2).png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 52.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/sponser-img/Frame 1 (3).png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex space-x-8 justify-center items-center mt-5">
+                        <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-24">
+                            <div>
+                                <img src=" assets/sponser-img/Frame 1 (3).png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/sponser-img/Frame 41 (1).png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/sponser-img/Frame 42 (1).png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/sponser-img/Frame 43 (2).png" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/sponser-img/Frame 44 (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-0 md:gap-48 pb-24">
+                <div>
+                    <img src="assets/sponser-img/A.png" alt="">
+                </div>
+                <div class="divider divider-horizontal"></div>
+                <div>
+                    <img src="assets/sponser-img/B.png" alt="">
+                </div>
+                <div class="divider divider-horizontal"></div>
+                <div>
+                    <img src="assets/sponser-img/Black.png" alt="">
+                </div>
+            </div>
+
+        </section> -->
+        <!-- sponsor section end -->
+    </main>
+
+
+    <!-- 
+    <footer class="footer p-10 bg-slate-900 text-white py-24" style="font-family: Poppins, sans-serif;">
+        <div class="pl-48">
+            <img src="assets/Logo/logo.png" alt="">
+            <p class="text-2xl py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi <br> fuga,
+                perferendis
+                odio architecto
+                minima
+                reiciendis!</p>
+        </div>
+        <div>
+            <span class="text-white text-5xl pb-5 font-semibold">About</span>
+            <a class="link link-hover text-2xl">All Games</a>
+            <a class="link link-hover text-2xl">Company</a>
+            <a class="link link-hover text-2xl">Our Parents</a>
+            <a class="link link-hover text-2xl">Contact Us</a>
+        </div>
+        <div>
+            <span class="text-white text-5xl pb-5 font-semibold">About</span>
+            <a class="link link-hover text-2xl">Media</a>
+            <a class="link link-hover text-2xl">Careers</a>
+        </div>
+        <div>
+            <span class="text-white text-5xl pb-5 font-semibold">Legal</span>
+            <a class="link link-hover text-2xl">Licensing</a>
+            <a class="link link-hover text-2xl">Certification</a>
+        </div>
+        <div>
+            <span class="text-white text-5xl pb-5 font-semibold">Follow Us</span>
+            <a class="link link-hover text-2xl">Social Media 1</a>
+            <a class="link link-hover text-2xl">Social Media 1</a>
+        </div>
+    </footer>
+    <hr>
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content bg-slate-900">
+        <div class="text-xl text-white py-4 font-semibold">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
+    </footer> -->
+
+
 
 
     <script src="js/main.js"></script>
+
     <!-- tailwind css  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Swiper JS -->
@@ -203,6 +838,18 @@
             },
         });
     </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            rewind: true,
+            navigation: {
+                nextEl: ".swiper-div-next",
+                prevEl: ".swiper-div-prev",
+            },
+        });
+    </script>
+
+
 </body>
 
 </html>
