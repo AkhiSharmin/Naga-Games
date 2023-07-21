@@ -489,15 +489,15 @@ const newArrivalStopDrag = () => {
 
 const newArrivalHandleInfiniteScroll = () => {
     // If the recent is at the beginning, scroll to the end
-    if (recent.scrollLeft === 0) {
+    if (live.scrollLeft === 0) {
         new_arrival_slider.classList.add("no-transition");
-        recent.scrollLeft =
+        live.scrollLeft =
             new_arrival_slider.scrollWidth - 2 * new_arrival_slider.offsetWidth;
         new_arrival_slider.classList.remove("no-transition");
     }
     // If the recent is at the end, scroll to the beginning
     else if (
-        Math.ceil(recent.scrollLeft) ===
+        Math.ceil(live.scrollLeft) ===
         new_arrival_slider.scrollWidth - new_arrival_slider.offsetWidth
     ) {
         new_arrival_slider.classList.add("no-transition");
@@ -528,6 +528,184 @@ new_arrival.addEventListener("mouseenter", () =>
     clearTimeout(newArrivalTimeoutId)
 );
 new_arrival.addEventListener("mouseleave", newArrivalStartAutoPlay);
+
+
+
+// live casino slider 
+
+
+const live_casino_game = document.querySelector(".live_casino_game");
+const live_casino_game_slider = document.querySelector(
+    ".live_casino_game_slider"
+);
+const livePlayFirstCardWidth =
+    live_casino_game_slider.querySelector(".live_casino_card").offsetWidth;
+const livePlayArrowBtns = document.querySelectorAll(".live_casino_game i");
+const livePlayrChildren = [...live_casino_game_slider.children];
+
+let isDraggingLivePlay = false,
+    isAutoLivePlay = true,
+    livePlayStartX,
+    livePlayStartScrollLeft,
+    livePlayTimeoutId;
+
+// Get the number of cards that can fit in the recent at once
+let livePlaycardPerView = Math.round(
+    live_casino_game_slider.offsetWidth / livePlayFirstCardWidth
+);
+
+// Insert copies of the last few cards to beginning of recent for infinite scrolling
+livePlayrChildren
+    .slice(-livePlaycardPerView)
+    .reverse()
+    .forEach((card) => {
+        live_casino_game_slider.insertAdjacentHTML("afterbegin", card.outerHTML);
+    });
+
+// Insert copies of the first few cards to end of recent for infinite scrolling
+livePlayrChildren.slice(0, livePlaycardPerView).forEach((card) => {
+    live_casino_game_slider.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+// Scroll the recent at appropriate postition to hide first few duplicate cards on Firefox
+live_casino_game_slider.classList.add("no-transition");
+live_casino_game_slider.scrollLeft = live_casino_game_slider.offsetWidth;
+live_casino_game_slider.classList.remove("no-transition");
+
+// Add event listeners for the arrow buttons to scroll the recent left and right
+livePlayArrowBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        live_casino_game_slider.scrollLeft +=
+            btn.id == "left" ? -livePlayFirstCardWidth : livePlayFirstCardWidth;
+    });
+});
+
+const livePlayStartDrag = (e) => {
+    isDraggingLivePlay = true;
+    live_casino_game_slider.classList.add("dragging");
+    // Records the initial cursor and scroll position of the recent
+    livePlayStartX = e.pageX;
+    livePlayStartScrollLeft = live_casino_game_slider.scrollLeft;
+};
+
+const livePlayDragMove = (e) => {
+    if (!isDraggingLivePlay) return; // if isDraggingLivePlay is false return from here
+    // Updates the scroll position of the recent based on the cursor movement
+    live_casino_game_slider.scrollLeft =
+        livePlayStartScrollLeft - (e.pageX - livePlayStartX);
+};
+
+const livePlayStopDrag = () => {
+    isDraggingLivePlay = false;
+    live_casino_game_slider.classList.remove("dragging");
+};
+
+const livePlayHandleInfiniteScroll = () => {
+    // If the recent is at the beginning, scroll to the end
+    if (live.scrollLeft === 0) {
+        live_casino_game_slider.classList.add("no-transition");
+        live.scrollLeft =
+            live_casino_game_slider.scrollWidth -
+            2 * live_casino_game_slider.offsetWidth;
+        live_casino_game_slider.classList.remove("no-transition");
+    }
+    // If the recent is at the end, scroll to the beginning
+    else if (
+        Math.ceil(live.scrollLeft) ===
+        live_casino_game_slider.scrollWidth - live_casino_game_slider.offsetWidth
+    ) {
+        live_casino_game_slider.classList.add("no-transition");
+        live_casino_game_slider.scrollLeft = live_casino_game_slider.offsetWidth;
+        live_casino_game_slider.classList.remove("no-transition");
+    }
+
+    // Clear existing timeout & start autoplay if mouse is not hovering over recent
+    clearTimeout(livePlayTimeoutId);
+    if (!live_casino_game.matches(":hover")) livePlayStartAutoPlay();
+};
+
+const livePlayStartAutoPlay = () => {
+    if (window.innerWidth < 800 || !isAutoLivePlay) return; // Return if window is smaller than 800 or isAutoLivePlay is false
+    // Autoplay the recent after every 2500 ms
+    livePlayTimeoutId = setTimeout(
+        () => (live_casino_game_slider.scrollLeft += livePlayFirstCardWidth),
+        2500
+    );
+};
+livePlayStartAutoPlay();
+
+live_casino_game_slider.addEventListener("mousedown", livePlayStartDrag);
+live_casino_game_slider.addEventListener("mousemove", livePlayDragMove);
+document.addEventListener("mouseup", livePlayStopDrag);
+live_casino_game_slider.addEventListener(
+    "scroll",
+    livePlayHandleInfiniteScroll
+);
+live_casino_game.addEventListener("mouseenter", () =>
+    clearTimeout(livePlayTimeoutId)
+);
+live_casino_game.addEventListener("mouseleave", livePlayStartAutoPlay);
+
+
+// sport brings wealth slider 
+(function () {
+    const sport_game = document.querySelector(".sport_game");
+    const sport_slider = document.querySelector(".sport_slider");
+    const sportPlayFirstCardWidth = sport_slider.querySelector(".sport_card").offsetWidth;
+    const sportPlayArrowBtns = document.querySelectorAll(".sport_game i");
+    const sportPlayrChildren = [...sport_slider.children];
+
+    let isDraggingSportPlay = false,
+        isAutoSportPlay = true,
+        sportPlayStartX,
+        sportPlayStartScrollLeft,
+        sportPlayTimeoutId;
+
+    // ... (rest of the code remains the same)
+
+    const sportPlayHandleInfiniteScroll = () => {
+        // If the slider is at the beginning, scroll to the end
+        if (sport_slider.scrollLeft === 0) {
+            sport_slider.classList.add("no-transition");
+            sport_slider.scrollLeft =
+                sport_slider.scrollWidth - 2 * sport_slider.offsetWidth;
+            sport_slider.classList.remove("no-transition");
+        }
+        // If the slider is at the end, scroll to the beginning
+        else if (
+            Math.ceil(sport_slider.scrollLeft) ===
+            sport_slider.scrollWidth - sport_slider.offsetWidth
+        ) {
+            sport_slider.classList.add("no-transition");
+            sport_slider.scrollLeft = sport_slider.offsetWidth;
+            sport_slider.classList.remove("no-transition");
+        }
+
+        // Clear existing timeout & start autoplay if the mouse is not hovering over the slider
+        clearTimeout(sportPlayTimeoutId);
+        if (!sport_game.matches(":hover")) sportPlayStartAutoPlay();
+    };
+
+    const sportPlayStartAutoPlay = () => {
+        if (window.innerWidth < 800 || !isAutoSportPlay) return;
+        // Autoplay the slider after every 2500 ms
+        sportPlayTimeoutId = setTimeout(
+            () => (sport_slider.scrollLeft += sportPlayFirstCardWidth),
+            2500
+        );
+    };
+    sportPlayStartAutoPlay();
+
+    sport_slider.addEventListener("mousedown", sportPlayStartDrag);
+    sport_slider.addEventListener("mousemove", sportPlayDragMove);
+    document.addEventListener("mouseup", sportPlayStopDrag);
+    sport_slider.addEventListener("scroll", sportPlayHandleInfiniteScroll);
+    sport_game.addEventListener("mouseenter", () => clearTimeout(sportPlayTimeoutId));
+    sport_game.addEventListener("mouseleave", sportPlayStartAutoPlay);
+})();
+
+
+
 
 
 
